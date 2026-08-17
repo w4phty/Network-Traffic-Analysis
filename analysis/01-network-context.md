@@ -32,15 +32,15 @@ TLS is not a separate layer in the TCP/IP model. It is shown separately here bec
 ## Ethernet
 
 Each packet frame contains an Ethernet layer, with the main information being source and destination MAC addresses, and the EtherType. For example:
-- Source MAC: `74:24:9f:5e:af:0b`
-- Destination MAC: `04:d9:f5:7b:20:b5`
+- Source MAC: `74:24:9f:...`
+- Destination MAC: `04:d9:f5:...`
 - EtherType: IPv4
 
 ## ARP
 
 ARP (Address Resolution Protocol) is used to resolve an IPv4 address to a MAC address on a local network.
-In this case, we can see that the gateway IPv4 is 192.168.1.1 and MAC address is 74:24:9f:5e:af:0b.
-And the local machine IPv4 is 192.168.1.52 and MAC address is 04:d9:f5:7b:20:b5.
+In this case, we can see that the gateway IPv4 is 192.168.1.1 and MAC address is 74:24:9f:... .
+And the local machine IPv4 is 192.168.1.52 and MAC address is 04:d9:f5:... .
 
 
 ![ARP](../screenshots/06-arp.PNG)
@@ -48,7 +48,7 @@ And the local machine IPv4 is 192.168.1.52 and MAC address is 04:d9:f5:7b:20:b5.
 
 ## ICMPv6
 
-IPv6 Neighbor Discovery uses ICMPv6 messages to discover neighboring devices and resolve IPv6 addresses to MAC addresses on the local network. In this case we can analyze the ICMPv6 packets and we observe that the IPv6 associated to the MAC address `04:d9:f5:7b:20:b5` is `2a0d:3341:cd24:4710:1060:68e2:52e2:56fd`. When correlating this information with the ARP information above, we see that this is the IPv6 of the local machine.
+IPv6 Neighbor Discovery uses ICMPv6 messages to discover neighboring devices and resolve IPv6 addresses to MAC addresses on the local network. In this case we can analyze the ICMPv6 packets and we observe that the IPv6 associated to the MAC address `04:d9:f5:...` is `2a0d:3341:cd24:4710:...`. When correlating this information with the ARP information above, we see that this is the IPv6 of the local machine.
 
 
 ## Internet Protocol
