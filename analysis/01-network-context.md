@@ -43,7 +43,7 @@ In this case, we can see that the gateway IPv4 is 192.168.1.1 and MAC address is
 And the local machine IPv4 is 192.168.1.52 and MAC address is 04:d9:f5:7b:20:b5.
 
 
-![ARP](../screenshots/06-arp.png)
+![ARP](../screenshots/06-arp.PNG)
 
 
 ## ICMPv6
